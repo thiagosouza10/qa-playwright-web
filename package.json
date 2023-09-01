@@ -1,0 +1,12 @@
+{
+  "name": "playwright_web",
+  "version": "1.0.0",
+  "description": "Projeto de testes com playwright",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Thiago de Souza",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.37.1"
+  }
+}
