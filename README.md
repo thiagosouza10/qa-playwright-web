@@ -13,4 +13,4 @@ Outras formas de execução podem ser encontradas nas documentações https://pl
 # Biliotecas externas
 Faker BR
 https://www.npmjs.com/package/faker-br
-Utilização: Estamos utilizando o faker para criar os dados de cadastro aleatórios e automáticos.
+O faker BR é utilizado para criar os dados de usuário e endereço.
