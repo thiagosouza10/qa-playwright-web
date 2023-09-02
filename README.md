@@ -10,6 +10,10 @@ Os testes podem ser executados através dos scripts criados no arquivo package.j
 npm run testes
 Outras formas de execução podem ser encontradas nas documentações https://playwright.dev/docs/running-tests
 
+Os testes estão sendo executados em 3 browsers (chromium, firefox e webkit) conforme arquivo playwright.config.js
+
+A execução está ocorrendo em modo headless: true, dessa forma o browser não será aberto. Caso queira visualizar, no arquivo playwright.config.js, mudar headless: false.
+
 # Biliotecas externas
 Faker BR
 https://www.npmjs.com/package/faker-br
