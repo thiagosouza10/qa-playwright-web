@@ -9,3 +9,8 @@ Para ter uma visualização de como o projeto foi evoluindo, acesse o histórico
 Os testes podem ser executados através dos scripts criados no arquivo package.json:
 npm run testes
 Outras formas de execução podem ser encontradas nas documentações https://playwright.dev/docs/running-tests
+
+# Biliotecas externas
+Faker BR
+https://www.npmjs.com/package/faker-br
+Utilização: Estamos utilizando o faker para criar os dados de cadastro aleatórios e automáticos.

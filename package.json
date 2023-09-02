@@ -12,5 +12,8 @@
   "license": "MIT",
   "devDependencies": {
     "@playwright/test": "^1.37.1"
+  },
+  "dependencies": {
+    "faker-br": "^0.4.1"
   }
 }
