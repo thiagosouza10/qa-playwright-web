@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "Projeto de testes com playwright",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "testes": "npx playwright test",
+    "teste": "npx playwright test tests/cadastro.spec.js",
+    "abrirTrace": "npx playwright show-trace test-results/cadastro-Deve-acessar-site-Buger-Eats-chromium/trace.zip"
+  },
   "author": "Thiago de Souza",
   "license": "MIT",
   "devDependencies": {
