@@ -1,20 +1,11 @@
-const { defineConfig, devices } = require('@playwright/test')
+import { defineConfig, devices } from '@playwright/test'
 
-/**
- * Read environment variables from file.
- * https://github.com/motdotla/dotenv
- */
-// require('dotenv').config();
-
-/**
- * @see https://playwright.dev/docs/test-configuration
- */
-module.exports = defineConfig({
+export default defineConfig({
   testDir: './tests',
   fullyParallel: true,
   workers: 3,
 
-  reporter: [['html', { open: 'always' }]],
+  reporter: [['html', { open: 'never' }]],
 
   use: {
     baseURL: 'https://buger-eats.vercel.app',
@@ -30,10 +21,6 @@ module.exports = defineConfig({
     {
       name: 'firefox',
       use: { ...devices['Desktop Firefox'] },
-    },
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },
+    }
   ],
 })

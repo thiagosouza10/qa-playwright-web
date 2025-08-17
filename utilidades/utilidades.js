@@ -1,13 +1,6 @@
 const faker = require('faker-br')
 
-exports.Utilidades = class Utilidades {
-
-    /**
-     * @param {import('@playwright/test').Page} page
-     */
-    constructor(page) {
-        this.page = page
-    }
+class Utilidades {
 
     async gerarDadosDoUsuario() {
         const cpf = faker.br.cpf()
@@ -40,3 +33,5 @@ exports.Utilidades = class Utilidades {
         }
     }
 }
+
+export default new Utilidades()
