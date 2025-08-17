@@ -4,9 +4,13 @@
   "description": "Projeto de testes com playwright",
   "main": "index.js",
   "scripts": {
-    "testes": "npx playwright test",
-    "teste": "npx playwright test tests/cadastro.spec.js",
-    "report": "npx allure serve allure-results"
+    "testes": "npm run excluir-results && npx playwright test",
+    "testes-report": "npm run excluir-results && npx playwright test && npm run report",
+    "copiar-results": "xcopy /E /I /Y .\\history .\\allure-results\\history || echo history not found",
+    "excluir-results": "if exist .\\allure-results rmdir /S /Q .\\allure-results",
+    "excluir-report": "if exist .\\allure-report rmdir /S /Q .\\allure-report",
+    "copiar-history-raiz": "if exist .\\allure-report\\history xcopy /E /I /Y .\\allure-report\\history .\\history",
+    "report": "npm run copiar-history-raiz && npm run copiar-results && npm run excluir-report && npx allure generate ./allure-results -o ./allure-report && npx allure open ./allure-report"
   },
   "author": "Thiago de Souza",
   "license": "MIT",

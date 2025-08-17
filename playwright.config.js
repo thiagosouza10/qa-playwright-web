@@ -3,10 +3,10 @@ import { defineConfig, devices } from '@playwright/test'
 export default defineConfig({
   testDir: './tests',
   fullyParallel: true,
-  workers: 3,
+  workers: 6,
 
   //reporter: [['html', { open: 'never' }]],
-  reporter: [["line"], ["allure-playwright", {resultsDir: "allure-results", detail: true, suiteTitle: true}]],
+  reporter: [["line"], ["allure-playwright"]],
 
   use: {
     baseURL: 'https://buger-eats.vercel.app',
