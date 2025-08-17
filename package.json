@@ -6,12 +6,13 @@
   "scripts": {
     "testes": "npx playwright test",
     "teste": "npx playwright test tests/cadastro.spec.js",
-    "abrirTrace": "npx playwright show-trace test-results/cadastro-Deve-acessar-site-Buger-Eats-chromium/trace.zip"
+    "report": "npx allure serve allure-results"
   },
   "author": "Thiago de Souza",
   "license": "MIT",
   "devDependencies": {
-    "@playwright/test": "^1.54.2"
+    "@playwright/test": "^1.54.2",
+    "allure-playwright": "^3.3.3"
   },
   "dependencies": {
     "faker-br": "^0.4.1"

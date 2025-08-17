@@ -5,7 +5,8 @@ export default defineConfig({
   fullyParallel: true,
   workers: 3,
 
-  reporter: [['html', { open: 'never' }]],
+  //reporter: [['html', { open: 'never' }]],
+  reporter: [["line"], ["allure-playwright", {resultsDir: "allure-results", detail: true, suiteTitle: true}]],
 
   use: {
     baseURL: 'https://buger-eats.vercel.app',
