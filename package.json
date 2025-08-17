@@ -11,7 +11,7 @@
   "author": "Thiago de Souza",
   "license": "MIT",
   "devDependencies": {
-    "@playwright/test": "^1.37.1"
+    "@playwright/test": "^1.54.2"
   },
   "dependencies": {
     "faker-br": "^0.4.1"
